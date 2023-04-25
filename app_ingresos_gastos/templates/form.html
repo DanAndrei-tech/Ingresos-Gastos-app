@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block pageBase %}
+<h1>Esto seria {{tipoAccion}}</h1>
+
+<form>
+  <label for="date">Fecha:</label><br />
+  <input type="date" name="date" /><br />
+  <label for="concept">Concepto:</label><br />
+  <input type="text" id="lname" name="concept" /><br />
+  <label for="Monto">Monto:</label><br />
+  <input type="number" name="monto" /><br />
+  <button type="submit">{{tipoBoton}}</button>
+</form>
+
+<a href="/">Volver</a>
+
+{% endblock %}
